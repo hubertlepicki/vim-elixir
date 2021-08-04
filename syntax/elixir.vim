@@ -114,7 +114,7 @@ syn region elixirSigil matchgroup=elixirSigilDelimiter start=+\~\a\z('''\)+ end=
 syntax include @HTML syntax/html.vim
 unlet b:current_syntax
 syntax region elixirLiveViewSigil matchgroup=elixirSigilDelimiter keepend start=+\~L\z("""\)+ end=+^\s*\z1+ skip=+\\"+ contains=@HTML fold
-syntax region elixirSurfaceSigil matchgroup=elixirSigilDelimiter keepend start=+\~H\z("""\)+ end=+^\s*\z1+ skip=+\\"+ contains=@HTML fold
+syntax region elixirSurfaceSigil matchgroup=elixirSigilDelimiter keepend start=+\~F\z("""\)+ end=+^\s*\z1+ skip=+\\"+ contains=@HTML fold
 syntax region elixirPhoenixESigil matchgroup=elixirSigilDelimiter keepend start=+\~E\z("""\)+ end=+^\s*\z1+ skip=+\\"+ contains=@HTML fold
 syntax region elixirPhoenixeSigil matchgroup=elixirSigilDelimiter keepend start=+\~e\z("""\)+ end=+^\s*\z1+ skip=+\\"+ contains=@HTML fold
 

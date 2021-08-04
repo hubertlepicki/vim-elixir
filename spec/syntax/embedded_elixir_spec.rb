@@ -54,8 +54,8 @@ end
 
 describe 'Embedded Surface syntax' do
   it 'elixir' do
-    expect('{{ @foo }}').to include_surface_syntax('elixirVariable', 'foo')
-    expect('{{ @foo }}').to include_surface_syntax('surfaceDelimiter', '{{')
-    expect('{{ @foo }}').to include_surface_syntax('surfaceDelimiter', '}}')
+    expect('{ @foo }').to include_surface_syntax('elixirVariable', 'foo')
+    expect('{ @foo }').to include_surface_syntax('surfaceDelimiter', '{')
+    expect('{ @foo }').to include_surface_syntax('surfaceDelimiter', '}')
   end
 end

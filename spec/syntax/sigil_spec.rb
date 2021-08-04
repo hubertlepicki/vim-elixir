@@ -93,7 +93,7 @@ describe 'Sigil syntax' do
     end
 
     it 'Surface EEx' do
-      expect('~H"""surface template"""').to include_elixir_syntax('elixirSigilDelimiter', '"""')
+      expect('~F"""surface template"""').to include_elixir_syntax('elixirSigilDelimiter', '"""')
     end
 
     it 'EEx' do
